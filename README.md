@@ -1,0 +1,2 @@
+# Amazuki
+A modern software
