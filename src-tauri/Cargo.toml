@@ -1,0 +1,15 @@
+[package]
+name = "amazuki-tauri"
+version = "0.0.1"
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { workspace = true, features = [] }
+
+[dependencies]
+tauri = { workspace = true, features = ["shell-open"] }
+serde = { workspace = true, features = ["derive"] }
+serde_json.workspace = true
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
