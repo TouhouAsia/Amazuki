@@ -16,14 +16,29 @@
     </p>
 </div>
 
-## 构建
-1.安装 bun
-> curl -fsSL https://bun.sh/install | bash
-2.安装 Rustup
-> curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-3.安装 tauri-cli
-> cargo install tauri-cli
-4.安装依赖
-> bun install
-5.构建
-> cargo tauri build
+## 构建步骤
+
+1. **安装 Bun:**
+   ```shell
+   curl -fsSL https://bun.sh/install | bash
+   ```
+
+2. **安装 Rustup:**
+   ```shell
+   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+   ```
+
+3. **安装 Tauri CLI:**
+   ```shell
+   cargo install tauri-cli
+   ```
+
+4. **安装项目依赖:**
+   ```shell
+   bun install
+   ```
+
+5. **构建应用:**
+   ```shell
+   cargo tauri build
+   ```
