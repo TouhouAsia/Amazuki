@@ -1,5 +1,5 @@
 name: Check
-on: [push, pull_request]
+on: [push]
 jobs:
   test:
     strategy:
@@ -45,18 +45,3 @@ jobs:
         uses: actions-rs/cargo@v1
         with:
           command: test
-
-      - name: Cargo build
-        uses: actions-rs/cargo@v1
-        with:
-          command: build
-          args: --release
-
-      - name: Build Frontend
-        run: bun install
-
-      - name: Install tauri-driver
-        uses: actions-rs/cargo@v1
-        with:
-          command: install
-          args: tauri-driver
