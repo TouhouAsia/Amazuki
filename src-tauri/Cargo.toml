@@ -1,0 +1,22 @@
+[package]
+name = "amazuki-tauri"
+version.workspace = true
+authors.workspace = true
+description.workspace = true
+repository.workspace = true
+keywords.workspace = true
+license.workspace = true
+homepage.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[build-dependencies]
+tauri-build = { workspace = true, features = [] }
+
+[dependencies]
+tauri = { workspace = true, features = ["clipboard-all", "dialog-open", "dialog-save", "shell-open"] }
+serde = { workspace = true, features = ["derive"] }
+serde_json.workspace = true
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
