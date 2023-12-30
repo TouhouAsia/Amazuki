@@ -1,6 +1,7 @@
 <div align="center">
+    <br>
     <p align="center">
-        <img width="48" src="./app-icon.png" alt="Amazuki Icon">
+        <img width="128" src="./app-icon.png" alt="Amazuki Icon">
     </p>
     <h1 align="center">Amazuki</h1>
     <h2 align="center">雨月</h1>
